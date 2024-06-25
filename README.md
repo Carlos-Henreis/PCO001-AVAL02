@@ -13,16 +13,16 @@ Este repositório contém o material para o seminário sobre **Grafos**, apresen
     - Aplicações de Grafos em problemas reais.
 * **Código:** Implementação em C/C++.
 * **Exemplos:** Conjunto de exemplos práticos que demonstram o uso de grafos e dos algoritmos implementados.
-* **Documentação:** Descrição detalhada dos conceitos, algoritmos e exemplos de uso (Wiki).
+* **Hands on:** Um exemplo prático utilizando o banco de dados orientado a grafos Neo4j.
+* **Documentação:** Documentação do código e do projeto.
 
 ## Como Usar
 
 1. Clone este repositório: `git clone https://github.com/Carlos-Henreis/PCO001-AVAL02.git`
-2. Consulte a documentação na Wiki para entender a estrutura do projeto e como executar o código.
-
-## Wiki
-
-A documentação detalhada sobre o projeto, incluindo a descrição dos conceitos de grafos, algoritmos e exemplos de uso, está disponível na [Wiki deste repositório](https://github.com/Carlos-Henreis/PCO001-AVAL02/wiki).
+2. O projeto foi dividido em pastas, cada uma contendo um tipo de conteúdo específico.
+    1. **Seminário:** Acesse a pasta `1. Seminario` e abra o arquivo `Apresentacao-Seminario.pdf`. Este arquivo contém a apresentação do seminário (conteúdo teórico).
+    2. **Código:** Acesse a pasta `2. tad_grafo` e abra o arquivo `README.md`. Este arquivo contém instruções para compilar e executar o código.
+    3. **hands on:** Acesse a pasta `3. hands_on` e abra o arquivo `README.md`. Este arquivo contém instruções para compilar e executar o hands on utilizando o Neo4j/Node.js/Angular.
 
 
 ## Equipe 14
