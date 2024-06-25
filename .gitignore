@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+# Adicionar arquivos específicos do LaTeX ao .gitignore
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+svg-inkscape/
