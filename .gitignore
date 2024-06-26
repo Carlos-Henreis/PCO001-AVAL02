@@ -41,8 +41,7 @@
 *.synctex.gz
 *.toc
 
-# Arquivo PDF gerado
-*.pdf
+
 
 # Outras extensões temporárias
 *.bbl
@@ -57,3 +56,4 @@
 *.mtc*
 *.run.xml
 svg-inkscape/
+seminario.pdf
