@@ -19,6 +19,7 @@ No diretório `projeto` estão os arquivos latex/imagens utilizados para a cria�
 Necessário ter o [TexLive](https://www.tug.org/texlive/) instalado.
 
 ```bash
+cd projeto
 pdflatex seminario.tex
 ```
 
