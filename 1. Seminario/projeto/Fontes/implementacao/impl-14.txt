@@ -1,0 +1,29 @@
+(u:Usuario {nome: "Ana", idade: 30})
+(a:Filme {titulo: "Matrix"})<-[:ATUOU]-(b:Ator {personagem: "Neo"})
+CREATE (m:Filme {titulo: "Matrix", ano: 1999})
+CREATE (a:Ator {nome: "Keanu Reeves"})
+CREATE (m)-[:ATUOU]->(a)
+MATCH (a:Ator {nome: "Keanu Reeves"})-[:ATUOU]->(f:Filme)
+RETURN f.titulo
+MATCH (f:Filme {titulo: "Matrix"})
+SET f.ano = 1998
+MATCH (p:Pessoa {nome: "Alice"})
+DETACH DELETE p
+MATCH (p:Pessoa)
+WHERE p.idade > 25
+RETURN p.nome, p.idade
+CREATE (u:User {matricula: "2024100417", nome: "Carlos Henrique Reis"})
+MATCH (u:User {matricula: "2024100417"}) RETURN u
+MATCH (u:User {matricula: $userId})
+CREATE (u)-[:POSTADO]->(p:Post {id: $postId, content: $content, timestamp: timestamp()}) RETURN p
+MATCH (u:User {matricula: $userId})
+CREATE (u)-[:POSTADO]->(p:Post {id: $postId, content: $content, timestamp: timestamp()}) RETURN p
+MATCH (u:User)-[:POSTADO]->(p:Post {id: $postId})
+OPTIONAL MATCH (p)<-[l:LIKES]-()
+RETURN p, u.nome AS nome, COUNT(l) AS likes
+MATCH (u:User)-[:POSTADO]->(p:Post)
+OPTIONAL MATCH (p)<-[l:LIKES]-()
+RETURN p, u.nome AS nome, COUNT(l) AS likes
+ORDER BY p.timestamp DESC
+MATCH (u:User {matricula: $userId}), (p:Post {id: $postId})
+CREATE (u)-[:LIKES]->(p) RETURN p

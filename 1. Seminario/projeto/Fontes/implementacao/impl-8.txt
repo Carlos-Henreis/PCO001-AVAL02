@@ -1,0 +1,15 @@
+Algoritmo BuscaEmLargura(G, s)
+	Entrada: "Grafo G, vertice inicial s"
+	Saida: "Vertices de G numerados em ordem de distancia de s"
+		
+		Inicializa todos os vertices de G como nao visitados
+		
+		Fila <- {s}
+		Numere s
+		
+		Enquanto Fila nao estiver vazia Faca
+			Retire um vertice v da Fila
+			Para cada vizinho w de v Faca
+				Se w nao estiver numerado Entao
+					Numere w
+					Ponha w na Fila
