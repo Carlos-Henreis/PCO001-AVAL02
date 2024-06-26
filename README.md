@@ -20,7 +20,7 @@ Este repositório contém o material para o seminário sobre **Grafos**, apresen
 
 1. Clone este repositório: `git clone https://github.com/Carlos-Henreis/PCO001-AVAL02.git`
 2. O projeto foi dividido em pastas, cada uma contendo um tipo de conteúdo específico.
-    1. **Seminário:** Acesse a pasta `1. Seminario` e abra o arquivo `Apresentacao-Seminario.pdf`. Este arquivo contém a apresentação do seminário (conteúdo teórico).
+    1. **Seminário:** Acesse a pasta `1. Seminario` e abra o arquivo `Apresentacao-Seminario.pdf`. Este arquivo contém a apresentação do seminário (conteúdo teórico), e no diretório `projeto` estão os arquivos latex/imagens utilizados para a criação da apresentação.
     2. **Código:** Acesse a pasta `2. tad_grafo` e abra o arquivo `README.md`. Este arquivo contém instruções para compilar e executar o código.
     3. **hands on:** Acesse a pasta `3. hands_on` e abra o arquivo `README.md`. Este arquivo contém instruções para compilar e executar o hands on utilizando o Neo4j/Node.js/Angular.
 

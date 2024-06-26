@@ -32,10 +32,28 @@
 *.app
 
 # Adicionar arquivos específicos do LaTeX ao .gitignore
+# Arquivos auxiliares e de log
 *.aux
 *.log
 *.nav
 *.out
 *.snm
 *.synctex.gz
+*.toc
+
+# Arquivo PDF gerado
+*.pdf
+
+# Outras extensões temporárias
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.ilg
+*.ind
+*.lof
+*.lot
+*.maf
+*.mtc*
+*.run.xml
 svg-inkscape/
