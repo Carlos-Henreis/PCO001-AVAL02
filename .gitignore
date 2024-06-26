@@ -9,6 +9,8 @@ CMakeFiles/
 CMakeCache.txt
 *.cmake
 
+*.layout
+
 # Prerequisites
 *.d
 
