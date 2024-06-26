@@ -1,3 +1,16 @@
+# Diretórios gerados automaticamente pelo IDE/compilador
+.idea/
+bin/
+cmake-build-debug/
+obj/
+
+# Arquivos auxiliares do CMake
+CMakeFiles/
+CMakeCache.txt
+*.cmake
+
+*.layout
+
 # Prerequisites
 *.d
 
@@ -40,8 +53,6 @@
 *.snm
 *.synctex.gz
 *.toc
-
-
 
 # Outras extensões temporárias
 *.bbl
