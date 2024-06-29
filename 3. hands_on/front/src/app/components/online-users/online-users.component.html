@@ -1,0 +1,6 @@
+<button mat-button matBadge="{{ listUsersLogged.length }}" [matMenuTriggerFor]="menu">Online
+    <mat-icon>people</mat-icon></button>
+
+<mat-menu #menu="matMenu">
+    <button mat-menu-item *ngFor="let user of listUsersLogged">{{ user.nome }}</button>
+</mat-menu>

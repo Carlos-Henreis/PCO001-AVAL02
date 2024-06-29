@@ -1,0 +1,43 @@
+<app-toolbar></app-toolbar>
+<!--Adicionar quantidade de usuários online-->
+<div class="container">
+    
+    <mat-card class="add-post-card">
+      <mat-card-content>
+        <app-add-post></app-add-post>
+      </mat-card-content>
+      <mat-card-actions  align="end">
+        <app-online-users [listUsersLogged]=listUsersLogged></app-online-users>
+    </mat-card-actions>
+
+    </mat-card>
+    
+
+    <mat-card class="post-card" *ngIf="loading">
+      <mat-progress-bar mode="query"></mat-progress-bar>
+    </mat-card>
+
+    <mat-card class="post-card" *ngFor="let post of posts">
+      <mat-card-header>
+        <div mat-card-avatar class="initials-avatar">{{ getInitials(post.user) }}</div>
+        <mat-card-title>{{ post.user }}</mat-card-title>
+        <mat-card-subtitle>
+          {{ post.timestamp | date: 'medium' }}
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        {{ post.content }}
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-icon-button (click)="likePost(post.id)">
+          <mat-icon>thumb_up</mat-icon>
+          {{ post.likes }}
+        </button>
+      </mat-card-actions>
+    </mat-card>
+
+    <!-- Botão flutuante -->
+    <button mat-fab color="primary" *ngIf="isScrolled" mat-fab class="scroll-to-top-button" (click)="scrollToTop()">
+      <mat-icon>arrow_upward</mat-icon>
+    </button>
+</div>

@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #cac1c1 !important;
+  /* Fundo cinza mais */
+  /*  Fundo branco */
+
+}
+
+.login-card {
+  width: 300px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.error-alert {
+  background-color: #f44336;
+  /* Red */
+  color: white;
+}
+
+.spinner-create-post {
+  width: 30px !important;
+  height: 30px !important;
+}

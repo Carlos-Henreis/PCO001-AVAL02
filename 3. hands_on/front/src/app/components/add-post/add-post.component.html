@@ -1,0 +1,10 @@
+
+  <div>
+    <mat-form-field class="new-post">
+      <textarea matInput placeholder="Escreva sua postagem..." [(ngModel)]="content"></textarea>
+    </mat-form-field><br>
+    <button *ngIf="!loading" mat-raised-button color="primary" (click)="addPost()">Publicar</button>
+    
+    <mat-spinner *ngIf="loading" class="spinner-create-post"></mat-spinner>
+  </div>
+  

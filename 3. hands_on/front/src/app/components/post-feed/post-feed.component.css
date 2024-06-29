@@ -1,0 +1,52 @@
+.container {
+    justify-content: space-around;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cac1c1 !important; /* Fundo cinza mais */
+    /*  Fundo branco */
+
+  }
+
+
+  .add-post-card {
+    width: 70%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px;
+  }
+
+  .post-card {
+    width: 70%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .multiline-tooltip{
+    white-space: pre-line;
+  }
+
+  .scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+
+  .initials-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e0e0; /* Cor de fundo para o avatar */
+    color: #424242; /* Cor das iniciais */
+    width: 40px; /* Largura do círculo */
+    height: 40px; /* Altura do círculo */
+    border-radius: 50%; /* Faz o div ser um círculo */
+    font-size: 16px; /* Tamanho da fonte das iniciais */
+    font-weight: bold; /* Negrito para as iniciais */
+  }
